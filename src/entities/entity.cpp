@@ -9,15 +9,11 @@ Player::Player(sf::Vector2f initialPosition) {
 
 // Position getter
 sf::Vector2f Player::getPosition() {
-    return player.getPosition();
+    return gameObject::getPosition();
 }
 
 // Position setter
 void Player::setPosition(sf::Vector2f newPosition) {
-    player.setPosition(newPosition);
+    gameObject::setPosition(newPosition);
 }
 
-// Drawable object getter
-const sf::Drawable& Player::getDrawableObject() {
-    return player;
-}

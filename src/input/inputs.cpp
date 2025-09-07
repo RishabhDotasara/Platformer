@@ -8,6 +8,7 @@ void InputHandler::update() {
     currentKeys[sf::Keyboard::Left] = sf::Keyboard::isKeyPressed(sf::Keyboard::Left);
     currentKeys[sf::Keyboard::Up] = sf::Keyboard::isKeyPressed(sf::Keyboard::Up);
     currentKeys[sf::Keyboard::Down] = sf::Keyboard::isKeyPressed(sf::Keyboard::Down);
+    currentKeys[sf::Keyboard::Space] = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
 }
 
 bool InputHandler::isKeyPressed(sf::Keyboard::Key key)

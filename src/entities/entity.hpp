@@ -1,8 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "gameObject.hpp"
 
 
-class Player
+class Player : public gameObject
 {
     private:
         sf::RectangleShape player;
