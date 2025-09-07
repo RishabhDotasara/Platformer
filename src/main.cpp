@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "input/inputs.hpp"
-#include "entities/entity.hpp"
+#include "entities/player.hpp"
 #include "physics/physics.hpp"
 #include "game/game.hpp"
 

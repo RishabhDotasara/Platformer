@@ -1,9 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../input/inputs.hpp"
-#include "../entities/entity.hpp"
+#include "../entities/player.hpp"
 #include "../physics/physics.hpp"
 #include "../music/soundManager.hpp"
+#include "../entities/platform.hpp"
 
 class Game {
 private:
@@ -14,19 +15,25 @@ private:
     // Game objects
     Player player;
     PhysicalObject physics;
-    sf::RectangleShape ground;
-    sf::RectangleShape auxGround;
+    
+
+    // all platforms 
+    std::vector<Platform> platforms;
+
+
     InputHandler input;
 
-    // music & sound settings
+    // managers
     SoundManager soundManager;
-
+    SpriteManager spriteManager;
     
     // Private methods
     void handleEvents();
     void update(float deltaTime);
     void render();
     void loadAllSounds();
+    void loadAllSprites();
+    void createPlatforms();
 
 public:
     Game();
